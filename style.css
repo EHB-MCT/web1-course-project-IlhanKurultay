@@ -366,6 +366,7 @@ aside div h2 {
     main p,
     aside p {
         font-size: 22px;
+        line-height: 34px;
     }
 
     .skills article {
