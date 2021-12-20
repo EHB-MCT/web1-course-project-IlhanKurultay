@@ -7,18 +7,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
+    <script>
+        //Ai
+        function drieAi() {
+            document.getElementById("hover-illustrator").style.visibility = 'visible';
+        }
+
+        function neenAi() {
+            document.getElementById("hover-illustrator").style.visibility = 'hidden';
+        }
+        //Ps
+        function driePs() {
+            document.getElementById("hover-photoshop").style.visibility = 'visible';
+        }
+
+        function neenPs() {
+            document.getElementById("hover-photoshop").style.visibility = 'hidden';
+        }
+        //prem
+        function driePrem() {
+            document.getElementById("hover-prempro").style.visibility = 'visible';
+        }
+
+        function neenPrem() {
+            document.getElementById("hover-prempro").style.visibility = 'hidden';
+        }
+        //ae
+        function drieAe() {
+            document.getElementById("hover-ae").style.visibility = 'visible';
+        }
+
+        function neenAe() {
+            document.getElementById("hover-ae").style.visibility = 'hidden';
+        }
+        //html
+        function drieHtml() {
+            document.getElementById("hover-html").style.visibility = 'visible';
+        }
+
+        function neenHtml() {
+            document.getElementById("hover-html").style.visibility = 'hidden';
+        }
+        //PHP
+        function driePHP() {
+            document.getElementById("hover-php").style.visibility = 'visible';
+        }
+
+        function neenPHP() {
+            document.getElementById("hover-php").style.visibility = 'hidden';
+        }
+        //BLENDER
+        function drieD() {
+            document.getElementById("hover-blender").style.visibility = 'visible';
+        }
+
+        function neen() {
+            document.getElementById("hover-blender").style.visibility = 'hidden';
+        }
+
+        function toonNav() {
+            if (document.getElementById("pc").style.display == "none") {
+                document.getElementById("pc").style.display = "flex";
+                document.getElementById("x").style.display = "flex";
+                document.getElementById("burger").style.display = "none";
+                document.getElementById("navigatie").style.gridTemplateColumns = "1fr 1fr 1fr";
+            } else {
+                document.getElementById("pc").style.display = "none";
+                document.getElementById("x").style.display = "none";
+                document.getElementById("burger").style.display = "flex";
+                document.getElementById("navigatie").style.gridTemplateColumns = "1fr 1fr";
+            }
+
+        }
+    </script>
 </head>
 
 <body>
+    <div class="cursor"></div>
     <navbar>
-        <nav>
+        <nav id="navigatie">
             <div>
                 <p>Ilhan<br>
                     Kurultay</p>
             </div>
-            <div>
-                <p>Home<br>
-                    NEEN</p>
+            <div id="pc" class="pc-nav">
+                <p><a href="#author">author </a></p>
+                <p><a href="#skills">skills</a></p>
+                <p><a href="#proj">projects</a></p>
+                <p><a href="#contact">contact</a></p>
+            </div>
+            <div onclick="toonNav();" class="mob-nav">
+                <div id="burger">
+                    <p> ME<br>
+                        NU</p>
+                </div>
+                <div class="xClass" id="x">
+                    <img style="width: 15%;" src="images/Group 23.png"> </div>
             </div>
         </nav>
     </navbar>
@@ -26,73 +110,117 @@
 
         <header class="banner">
             <section>
-                <h1>&lt;HOME&gt;</h1>
-                <h1>&lt;AUTHOR&gt;</h1>
-                <h1>&lt;SKILLS&gt;</h1>
-                <h1>&lt;CONTACT&gt;</h1>
+                <h1><a href="#author">&lt;AUTHOR&gt;</a></h1>
+                <h1><a href="#skills">&lt;SKILLS&gt;</a></h1>
+                <h1><a href="#proj">&lt;PROJECTS&gt;</a></h1>
+                <h1><a href="#contact">&lt;CONTACT&gt;</a></h1>
             </section>
-            <p>dit is mijn portfolio website
-                van het jaar<br>2021-2022 </p>
+            <p>this is my portfolio website of the year
+                <br>2021-2022</p>
         </header>
-        <main>
+        <main id="author">
             <section>
-                <h1> &lt;AUTHOR&gt;</h1>
-                <h1>&lt;AUTHOR&gt;</h1>
-                <h1>&lt;AUTHOR&gt;</h1>
-                <h2>&lt;Ilhan&gt;</h2>
+                <div>
+                    <h1> &lt;AUTHOR&gt;</h1>
+                    <h1>&lt;AUTHOR&gt;</h1>
+                    <h1>&lt;AUTHOR&gt;</h1>
+                    <h2>&lt;Ilhan&gt;</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed elit nec enim luctus ornare.
-                    Suspendisse rutrum in neque at convallis.
-                    Fusce venenatis, elit vel volutpat dignissim, eros tellus elementum lacus, ac porta lacus ex vel
-                    magna. In a nunc vel turpis ullamcorper faucibus. Pellentesque imperdiet accumsan lorem at ornare.
-                </p>
+                    <p>
+                        My name is Ilhan Kurultay and I am studying at the Erasmus University of Brussels. I was born in
+                        Belgium but, I am from Turkey. My hobbies are 3d modeling, gaming and football,I also listen to
+                        music in my free time.
+                    </p>
+                </div>
             </section>
-            <img src="images/ilhan.png">
+            <div class="me"> <img src="images/ilhan.png"></div>
+            <aside></aside>
+            <aside><img src="images/Group 26.png"></aside>
         </main>
-        <section class="skills">
-            <h1> &lt;SKILLS&gt;</h1>
-            <h1> &lt;SKILLS&gt;</h1>
-            <h1> &lt;SKILLS&gt;</h1>
+        <section id="skills" class="skills">
+            <div class="titel-skill">
+                <section>
+                    <h1> &lt;SKILLS&gt;</h1>
+                    <h1> &lt;SKILLS&gt;</h1>
+                    <h1> &lt;SKILLS&gt;</h1>
+                </section>
+                <aside><img src="images/Group 25.png"></aside>
+            </div>
             <article>
-                <h2>PHOTOSHOP</h2>
-                <h2>ILLUSTRATOR</h2>
-                <h2>PREMIERE PRO</h2>
-                <h2>AFTER EFFECTS</h2>
-                <h2>HTML5</h2>
-                <h2>PHP</h2>
-                <h2>BLENDER</h2>
+
+                <div onmouseover="driePs();" onmouseout="neenPs();">
+                    <h2>PHOTOSHOP</h2>
+                </div>
+                <div onmouseover="drieAi();" onmouseout="neenAi();">
+                    <h2>ILLUSTRATOR</h2>
+                </div>
+                <div onmouseover="driePrem();" onmouseout="neenPrem();">
+                    <h2>PREMIERE PRO</h2>
+                </div>
+                <div onmouseover="drieAe();" onmouseout="neenAe();">
+                    <h2>AFTER EFFECTS</h2>
+                </div>
+                <div onmouseover="drieHtml();" onmouseout="neenHtml();">
+                    <h2>HTML5</h2>
+                </div>
+                <div onmouseover="driePHP();" onmouseout="neenPHP();">
+                    <h2>PHP</h2>
+                </div>
+                <div onmouseover="drieD();" onmouseout="neen();">
+                    <h2>BLENDER</h2>
+                </div>
             </article>
+            <img id="hover-html" src="images/monalisa_ilhan.jpg">
+            <img id="hover-prempro" src="images/premiere.PNG">
+            <img id="hover-ae" src="images/after.PNG">
+            <img id="hover-photoshop" src="images/landscape.jpg">
+            <img id="hover-illustrator" src="images/monalisa_ilhan.jpg">
+            <img id="hover-php" src="images/monalisa_ilhan.jpg">
+            <img id="hover-blender" src="images/ezgif.com-gif-maker.gif">
         </section>
-        <aside>
+        <aside id="proj">
             <h1> &lt;PROJECTS&gt;</h1>
             <h1> &lt;PROJECTS&gt;</h1>
             <h1> &lt;PROJECTS&gt;</h1>
             <div id="margin-div">
                 <div>
-                    <h2>PHOTOSHOP OPDRACHT</h2>
-                    <img src="images/monalisa_ilhan.jpg">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed elit nec enim </p>
+                    <h2>PHOTOSHOP<br> OPDRACHT</h2>
+                    <section>
+                        <img src="images/monalisa_ilhan.jpg">
+                        <p>the better version of the monalisa </p>
+                    </section>
                 </div>
                 <div>
-                    <h2>BLENDER OPDRACHT</h2>
-                    <img src="images/blender_sneeuwman@2x.jpg">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed elit nec enim </p>
+                    <h2>BLENDER<br> OPDRACHT</h2>
+                    <section> <img src="images/blender_sneeuwman@2x.jpg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed elit nec enim
+                        </p>
+                    </section>
                 </div>
                 <div>
-                    <h2>WEBSITE OPDRACHT</h2>
-                    <img src="images/toetsenbotr@2x.jpg">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed elit nec enim </p>
+                    <h2>WEBSITE <br>OPDRACHT</h2>
+                    <section> <img src="images/toetsenbotr@2x.jpg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed elit nec enim
+                        </p>
+                    </section>
                 </div>
             </div>
         </aside>
-        <footer>
-            <h1> &lt;CONTACT&gt;</h1>
-            <h1> &lt;CONTACT&gt;</h1>
-            <h1> &lt;CONTACT&gt;</h1>
+        <footer id="contact">
             <section>
-                <p>0488.65.69.75</p>
-                <p>man.met.snor@outlook.be</p>
+                <h1> &lt;CONTACT&gt;</h1>
+                <h1> &lt;CONTACT&gt;</h1>
+                <h1> &lt;CONTACT&gt;</h1>
+                <section>
+                    <h2>0488.65.69.75</h2>
+                    <h2>man.met.snor@outlook.be</h2>
+                </section>
             </section>
+            <aside>
+                <img src="images/Group 24.png">
+                <img src="images/Group 23.png">
+
+            </aside>
         </footer>
     </section>
 </body>
