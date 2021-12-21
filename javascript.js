@@ -54,18 +54,3 @@
   function neen() {
       document.getElementById("hover-blender").style.visibility = 'hidden';
   }
-
-  function toonNav() {
-      if (document.getElementById("pc").style.display == "none") {
-          document.getElementById("pc").style.display = "flex";
-          document.getElementById("x").style.display = "flex";
-          document.getElementById("burger").style.display = "none";
-          document.getElementById("navigatie").style.gridTemplateColumns = "1fr 1fr 1fr";
-      } else {
-          document.getElementById("pc").style.display = "none";
-          document.getElementById("x").style.display = "none";
-          document.getElementById("burger").style.display = "flex";
-          document.getElementById("navigatie").style.gridTemplateColumns = "1fr 1fr";
-      }
-
-  }

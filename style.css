@@ -13,8 +13,6 @@ body {
     color: white;
 }
 
-
-
 body h1 {
     font-weight: 900;
 }
@@ -28,7 +26,7 @@ nav {
 }
 
 nav div:nth-child(2) {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -80,56 +78,44 @@ aside h1 {
 
 
 main section h1:nth-child(1),
-main section h1:nth-child(2),
 .skills h1:nth-child(1),
-.skills h1:nth-child(2),
 aside h1:nth-child(1),
-aside h1:nth-child(2),
-footer h1:nth-child(1),
-footer h1:nth-child(2) {
+footer h1:nth-child(1) {
     /*https://www.youtube.com/watch?v=bMsoCB6nwns*/
-    color: black;
-    text-decoration: none;
-    text-transform: capitalize;
-    background: linear-gradient(-45deg, #eeaa52, #e73c6f, #2394d5, #2af3b7);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    -webkit-text-stroke: 5px transparent;
-    animation: gradient 5s ease infinite;
+    color: rgba(187, 239, 243, 0.253);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.5px;
+}
+
+main section h1:nth-child(2),
+.skills h1:nth-child(2),
+aside h1:nth-child(2),
+footer h1:nth-child(2) {
+    color: rgb(187, 239, 243);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.5px;
+}
+
+main section h1:nth-child(3),
+.skills h1:nth-child(3),
+aside h1:nth-child(3),
+footer h1:nth-child(3) {
+    color: rgb(187, 239, 243);
+
 }
 
 .banner section h1:nth-child(1) a,
 .banner section h1:nth-child(3) a {
-    color: white;
+    color: rgba(187, 239, 243, 0.76);
     text-decoration: none;
 }
 
-/* tutorial om de stroke van de tetx aan te spreken
-https://www.youtube.com/watch?v=fXOjhxYogtM&t=1s
-*/
 .banner section h1:nth-child(2) a,
 .banner section h1:nth-child(4) a {
-    color: black;
+    color: rgba(187, 239, 243, 0.76);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.5px;
     text-decoration: none;
-    text-transform: capitalize;
-    background: linear-gradient(-45deg, #eeaa52, #e73c6f, #2394d5, #2af3b7);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    -webkit-text-stroke: 5px transparent;
-    animation: gradient 5s ease infinite;
-}
-
-@keyframes gradient {
-
-    0%,
-    100% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100%50%;
-    }
-
 }
 
 .banner {
@@ -174,7 +160,7 @@ aside #margin-div div {
 
 main p {
     font-weight: 400;
-    font-size: 10px;
+    font-size: 17px;
 }
 
 img {
@@ -317,7 +303,6 @@ aside div h2 {
     footer img,
     .skills aside img,
     aside img {
-
         width: 75%;
     }
 
@@ -541,8 +526,6 @@ aside div h2 {
         top: 2300px;
         /* opacity: 0.5; */
     }
-
-
 
     .skills img {
         display: flex;
