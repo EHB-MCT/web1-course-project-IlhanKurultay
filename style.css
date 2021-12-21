@@ -177,6 +177,11 @@ aside div h2 {
     margin: 25px;
 }
 
+.mob-nav p {
+    font-size: 13px;
+    font-weight: bold;
+}
+
 @media (min-width: 480px) {}
 
 @media (min-width: 768px) {
@@ -323,6 +328,7 @@ aside div h2 {
         justify-content: end;
         margin: 0;
     }
+
 }
 
 @media (min-width: 1920px) {
