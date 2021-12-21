@@ -81,7 +81,7 @@ main section h1:nth-child(1),
 .skills h1:nth-child(1),
 aside h1:nth-child(1),
 footer h1:nth-child(1) {
-    /*https://www.youtube.com/watch?v=bMsoCB6nwns*/
+    /* tutorial gevolgd https://www.youtube.com/watch?v=bMsoCB6nwns */
     color: rgba(187, 239, 243, 0.253);
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 0.5px;
