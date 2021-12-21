@@ -458,15 +458,11 @@ aside div h2 {
         z-index: 10;
     }
 
-
-
     #hover-blender {
         visibility: hidden;
         position: absolute;
         width: 15%;
         top: 2900px;
-        /*   z-index: -1; */
-        /* opacity: 0.5; */
     }
 
     #hover-php {
@@ -502,29 +498,23 @@ aside div h2 {
         visibility: hidden;
         position: absolute;
         width: 15%;
-        /*   z-index: -1; */
         top: 2500px;
         left: 250px;
-        /* opacity: 0.5; */
     }
 
     #hover-illustrator {
         visibility: hidden;
         position: absolute;
         width: 15%;
-        /*   z-index: -1; */
         left: 175px;
         top: 2400px;
-        /* opacity: 0.5; */
     }
 
     #hover-photoshop {
         visibility: hidden;
         position: absolute;
         width: 15%;
-        /*   z-index: -1; */
         top: 2300px;
-        /* opacity: 0.5; */
     }
 
     .skills img {
